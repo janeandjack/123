@@ -1,11 +1,136 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>{{title}}</title>
+     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel='stylesheet' href='/stylesheets/main.css' />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
   <body>
-    <a href="/">Home</a>
+    {{!-- <a href="/">Home</a> --}}
+   <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="/"> <img id="logo" class="img-fluid" src="/images/{{logo}}" alt="logo"> </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Games</a>
+      </li>
+         <li class="nav-item">
+        <a class="nav-link" href="#">Contact</a>
+      </li>
+   
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
     {{{body}}}
+
+
+ <section id="footer-section" class="footer-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="section-heading-2">
+                            <h3 class="section-title">
+                                <span>Office Address</span>
+                            </h3>
+                        </div>
+                        
+                        <div class="footer-address">
+                            <ul>
+                                <li class="footer-contact"><i class="fa fa-home"></i>123, Capulet Lane, London ON</li>
+                                <li class="footer-contact"><i class="fa fa-envelope"></i><a href="#">lcc751993173@gamil.com</a></li>
+                                <li class="footer-contact"><i class="fa fa-phone"></i>+1 (226) 456-7890</li>
+                                <li class="footer-contact"><i class="fa fa-globe"></i><a href="#" target="_blank">www.chaochaoli.ca</a></li>
+                            </ul>
+                        </div>
+                    </div><!--/.col-md-3 -->
+                    
+                    
+                    <div class="col-md-4">
+                        <div class="section-heading-2">
+                            <h3 class="section-title">
+                                <span>Latest Tweet</span>
+                            </h3>
+                        </div>
+                        
+                        <div class="latest-tweet">
+                            <div class="media">
+                                <div class="media-left">
+                                    <i class="fa fa-twitter fa-2x media-object"></i>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">About 15 days ago</h4>
+                                    <p>Apex II Coming soon.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-3 -->
+                    
+                    <div class="col-md-4">
+                        <div class="section-heading-2">
+                            <h3 class="section-title">
+                                <span>Stay With us</span>
+                            </h3>
+                        </div>
+                        <div class="subscription">
+                            <p> Subscribe for more informations.</p>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Your E-mail" id="name" required data-validation-required-message="Please enter your name.">
+                                <input type="submit" class="btn btn-primary" value="Subscribe">
+                            </div>
+                        </div>
+                    </div>
+                    
+         
+                </div><!--/.row -->
+            </div><!-- /.container -->
+        </section>
+        <!-- End Footer Section -->
+        
+        
+        <!-- Start CCopyright Section -->
+        <div id="copyright-section" class="copyright-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7">
+                        <div class="copyright">
+                            Copyright © 2019. All Rights Reserved.Design and Developed by <a href="http://www.chaochaoli.ca">Chaochao Li</a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-5">
+                        <div class="copyright-menu pull-right">
+                            <ul>
+                                <li><a href="/" class="active">Home</a></li>
+                                <li><a href="#">Game</a></li>
+                                <li><a href="#">Conatct</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div><!--/.row -->
+            </div><!-- /.container -->
+        </div>
+        <!-- End CCopyright Section -->
+        
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 </html>
